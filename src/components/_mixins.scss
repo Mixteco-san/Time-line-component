@@ -1,0 +1,26 @@
+
+@mixin x-center(){
+    display: flex;
+    justify-content: center;
+}
+@mixin y-center(){
+    display: flex;
+    align-items: center;
+}
+@mixin x-y-center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin square($side){
+    height: $side;
+    width: $side;
+}
+@mixin rectangle($w, $h){
+    height: $h;
+    width: $w;
+}
+@mixin circle($radio){
+    @include square($radio);
+    border-radius: 50%;
+}

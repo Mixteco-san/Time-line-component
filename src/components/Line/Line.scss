@@ -1,0 +1,23 @@
+@import '../mixins';
+
+.Line{
+    @include square(100%);
+    min-width: 15px;
+    &__head,
+    &__body,
+    &__footer{
+        @include x-y-center;
+    }
+    &__body{
+        height: calc(100% - 30px);
+    }
+    .Figure{
+        background-color: black;
+        &--circle{
+            @include circle(15px)
+        }
+        &--rect{
+            @include rectangle(3px, 100%)
+        }
+    }
+}

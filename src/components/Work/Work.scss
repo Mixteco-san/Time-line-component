@@ -1,0 +1,20 @@
+@import '../mixins';
+
+.Work{
+    &__Title,
+    &__Date{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &__Details{
+        width: 100%;
+        display: flex;
+    }
+    &__Logo,
+    &__Description{
+        width: 40%;
+    }
+    &__Line{
+        width: 20%;
+    }
+}
